@@ -1,10 +1,9 @@
-  // Sticky nav
+
   const nav = document.getElementById('mainNav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
   });
 
-  // Fade-up on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
       if (e.isIntersecting) {
@@ -16,7 +15,6 @@
 
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // Smooth active nav highlight
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
   window.addEventListener('scroll', () => {
@@ -30,9 +28,9 @@
     });
   });
 
-  // Form submit (placeholder)
   document.querySelector('.contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
     alert('Message sent! I will get back to you soon.');
     e.target.reset();
+
   });
