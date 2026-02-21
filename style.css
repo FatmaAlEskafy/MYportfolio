@@ -256,7 +256,7 @@
       object-fit: cover;
       flex-shrink: 0;
       border: 1px solid var(--border);
-      /* background: #e8e0d5 url("https://placehold.co/100x100/e8e0d5/a09080?text=Cert") center/cover no-repeat; */
+
     }
     .cert-img img {
   width: 100%;
@@ -380,7 +380,7 @@
 .project-img-wrap {
   position: relative;
   width: 100%;
-  height: 300px; /* غيريه حسب ذوقك */
+  height: 300px; 
   overflow: hidden;
 }
 
@@ -550,7 +550,7 @@
 .edu-photo {
   width: 90px;
   height: 90px;
-  object-fit: contain;  /* contain مش cover لأنه لوجو */
+  object-fit: contain;  
   padding: 8px;
   background: #fff;
   border: 1px solid var(--border);
@@ -562,4 +562,5 @@
   object-fit: cover;
   object-position: center top;
   
+
 }
